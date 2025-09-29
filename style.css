@@ -1,0 +1,149 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+main {
+	flex: 1;
+}
+footer {
+	margin-top: auto;
+}
+.win95-btn {
+	position: relative;
+}
+.hover-text {
+	display: none;
+	position: absolute;
+	left: 100%;
+	top: 0;
+	background: #fff;
+	border: 1px solid #333;
+	padding: 4px 8px;
+	z-index: 10;
+	white-space: nowrap;
+	font-size: 0.95em;
+	box-shadow: 2px 2px 6px #888;
+}
+.win95-btn:hover .hover-text {
+	display: block;
+}
+.win95-icon {
+	font-size: 1.2em;
+	vertical-align: middle;
+	margin-right: 8px;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	text-align: center;
+}
+body {
+	background: #008080;
+	font-family: 'MS Sans Serif', Arial, sans-serif;
+    cursor:url('https://image.pngaaa.com/348/3544348-middle.png'), auto;
+}
+
+h1{
+    background: linear-gradient(45deg,#ff7e5f,#feb47b,#ffed86,#9feb8f,#5fbfff,#9b8eff);
+    background-size: 700% 700%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: grad 3s linear infinite alternate;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-shadow: #e0e0e0 1px 1px 20px;
+}
+
+@keyframes grad{
+  0%{
+    background-position:0% 50%}to{background-position:100% 50%
+  }
+}
+
+.win95-window {
+	width: 600px;
+	margin: 80px auto;
+	background: #c0c0c0;
+	border: 2px solid #000;
+	box-shadow: 4px 4px 0 #222;
+	border-radius: 4px;
+}
+
+.win95-titlebar {
+	background: linear-gradient(90deg, #000080 80%, #c0c0c0 100%);
+	color: #fff;
+	padding: 6px 8px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 2px solid #000;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+
+.win95-title {
+	font-weight: bold;
+	font-size: 1rem;
+	letter-spacing: 1px;
+}
+
+.win95-titlebar-buttons {
+	display: flex;
+	gap: 2px;
+}
+
+.win95-title-btn {
+	width: 22px;
+	height: 22px;
+	background: #c0c0c0;
+	border: 2px outset #fff;
+	color: #222;
+	font-size: 1rem;
+	font-family: 'MS Sans Serif', Arial, sans-serif;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+	box-shadow: #000 1px 1px 0;
+}
+
+.win95-title-btn:active {
+	border: 2px inset #000;
+	background: #808080;
+}
+
+.win95-content {
+	padding: 24px 16px 16px 16px;
+}
+
+.win95-btn-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	justify-content: center;
+}
+
+.win95-btn {
+	min-width: 80px;
+	background: #e0e0e0;
+	border: 2px outset #fff;
+	color: #222;
+	font-family: 'MS Sans Serif', Arial, sans-serif;
+	font-size: 1rem;
+	padding: 6px 0;
+	border-radius: 2px;
+	cursor: pointer;
+	box-shadow: 3px 2px 0 #808080;
+	margin: 0 2px;
+}
+
+.win95-btn:active {
+	border: 2px inset #000;
+	background: #c0c0c0;
+}
+
