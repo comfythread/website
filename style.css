@@ -1,3 +1,7 @@
+
+/* ========================
+	 Base Layout & Typography
+	 ======================== */
 html, body {
 	height: 100%;
 	margin: 0;
@@ -7,6 +11,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	background: #008080;
+	font-family: 'MS Sans Serif', Arial, sans-serif;
+	cursor: url('https://image.pngaaa.com/348/3544348-middle.png'), auto;
 }
 main {
 	flex: 1;
@@ -14,8 +21,111 @@ main {
 footer {
 	margin-top: auto;
 }
+
+/* ========================
+	 Form Styles
+	 ======================== */
+.fill-input {
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 8px;
+}
+
+/* ========================
+	 Social Bar
+	 ======================== */
+.social-bar {
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+/* ========================
+	 Windows 95 Window Styles
+	 ======================== */
+.win95-window {
+	width: 50%;
+	margin: 80px auto;
+	background: #c0c0c0;
+	border: 2px solid #000;
+	box-shadow: 4px 4px 0 #222;
+	border-radius: 4px;
+}
+.win95-window-contact {
+	width: 25%;
+	margin: 80px auto;
+	background: #c0c0c0;
+	border: 2px solid #000;
+	box-shadow: 4px 4px 0 #222;
+	border-radius: 4px;
+}
+.win95-titlebar {
+	background: linear-gradient(90deg, #000080 80%, #c0c0c0 100%);
+	color: #fff;
+	padding: 6px 8px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 2px solid #000;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+.win95-title {
+	font-weight: bold;
+	font-size: 1rem;
+	letter-spacing: 1px;
+}
+.win95-titlebar-buttons {
+	display: flex;
+	gap: 2px;
+}
+.win95-title-btn {
+	width: 22px;
+	height: 22px;
+	background: #c0c0c0;
+	border: 2px outset #fff;
+	color: #222;
+	font-size: 1rem;
+	font-family: 'MS Sans Serif', Arial, sans-serif;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+	box-shadow: #000 1px 1px 0;
+}
+.win95-title-btn:active {
+	border: 2px inset #000;
+	background: #808080;
+}
+.win95-content {
+	padding: 24px 16px 16px 16px;
+}
+.win95-btn-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	justify-content: center;
+}
+
+/* ========================
+	 Windows 95 Button Styles
+	 ======================== */
 .win95-btn {
+	min-width: 80px;
+	background: #e0e0e0;
+	border: 2px outset #fff;
+	color: #222;
+	font-family: 'MS Sans Serif', Arial, sans-serif;
+	font-size: 1rem;
+	padding: 6px 0;
+	border-radius: 2px;
+	cursor: pointer;
+	box-shadow: 3px 2px 0 #808080;
+	margin: 0 2px;
 	position: relative;
+}
+.win95-btn:active {
+	border: 2px inset #000;
+	background: #c0c0c0;
 }
 .hover-text {
 	display: none;
@@ -42,108 +152,28 @@ footer {
 	display: inline-block;
 	text-align: center;
 }
-body {
-	background: #008080;
-	font-family: 'MS Sans Serif', Arial, sans-serif;
-    cursor:url('https://image.pngaaa.com/348/3544348-middle.png'), auto;
+
+/* ========================
+	 Heading Styles
+	 ======================== */
+h1 {
+	background: linear-gradient(45deg,#ff7e5f,#feb47b,#ffed86,#9feb8f,#5fbfff,#9b8eff);
+	background-size: 700% 700%;
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: grad 3s linear infinite alternate;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	text-shadow: #e0e0e0 1px 1px 20px;
 }
 
-h1{
-    background: linear-gradient(45deg,#ff7e5f,#feb47b,#ffed86,#9feb8f,#5fbfff,#9b8eff);
-    background-size: 700% 700%;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: grad 3s linear infinite alternate;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    text-shadow: #e0e0e0 1px 1px 20px;
-}
-
-@keyframes grad{
-  0%{
-    background-position:0% 50%}to{background-position:100% 50%
-  }
-}
-
-.win95-window {
-	width: 600px;
-	margin: 80px auto;
-	background: #c0c0c0;
-	border: 2px solid #000;
-	box-shadow: 4px 4px 0 #222;
-	border-radius: 4px;
-}
-
-.win95-titlebar {
-	background: linear-gradient(90deg, #000080 80%, #c0c0c0 100%);
-	color: #fff;
-	padding: 6px 8px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	border-bottom: 2px solid #000;
-	border-top-left-radius: 2px;
-	border-top-right-radius: 2px;
-}
-
-.win95-title {
-	font-weight: bold;
-	font-size: 1rem;
-	letter-spacing: 1px;
-}
-
-.win95-titlebar-buttons {
-	display: flex;
-	gap: 2px;
-}
-
-.win95-title-btn {
-	width: 22px;
-	height: 22px;
-	background: #c0c0c0;
-	border: 2px outset #fff;
-	color: #222;
-	font-size: 1rem;
-	font-family: 'MS Sans Serif', Arial, sans-serif;
-	cursor: pointer;
-	padding: 0;
-	margin: 0;
-	box-shadow: #000 1px 1px 0;
-}
-
-.win95-title-btn:active {
-	border: 2px inset #000;
-	background: #808080;
-}
-
-.win95-content {
-	padding: 24px 16px 16px 16px;
-}
-
-.win95-btn-row {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 12px;
-	justify-content: center;
-}
-
-.win95-btn {
-	min-width: 80px;
-	background: #e0e0e0;
-	border: 2px outset #fff;
-	color: #222;
-	font-family: 'MS Sans Serif', Arial, sans-serif;
-	font-size: 1rem;
-	padding: 6px 0;
-	border-radius: 2px;
-	cursor: pointer;
-	box-shadow: 3px 2px 0 #808080;
-	margin: 0 2px;
-}
-
-.win95-btn:active {
-	border: 2px inset #000;
-	background: #c0c0c0;
+@keyframes grad {
+	0% {
+		background-position: 0% 50%;
+	}
+	to {
+		background-position: 100% 50%;
+	}
 }
 

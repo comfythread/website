@@ -9,12 +9,14 @@
 <body>
   <header>
     <nav>
-      <h1 style="text-align: center;">Contact Me</h1>
+      <a href="index.html" style="text-decoration: none; color: black;">
+      <h1 style="text-align: center;">Comfythread</h1>
+      </a>
     </nav>
   </header>
   <main>
     <section>
-      <div class="win95-window">
+      <div class="win95-window-contact">
         <div class="win95-titlebar">
           <span class="win95-title">Contact Form
           </span>
@@ -26,7 +28,14 @@
         </div>
         <div class="win95-content">
           <p></p>
-          <!-- Add your photos here -->
+          <form action="https://formspree.io/f/mkgqjaze" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" class="fill-input" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" class="fill-input" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" class="fill-input" required></textarea><br><br>
+            <input type="submit" value="Submit" class="fill-input">
         </div>
       </div>
     </section>
